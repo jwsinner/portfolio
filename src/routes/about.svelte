@@ -1,16 +1,7 @@
 <script context="module">
 	import { browser, dev } from '$app/env';
-
-	// we don't need any JS on this page, though we'll load
-	// it in dev so that we get hot module replacement...
 	export const hydrate = dev;
-
-	// ...but if the client-side router is already loaded
-	// (i.e. we came here from elsewhere in the app), use it
 	export const router = browser;
-
-	// since there's no dynamic data here, we can prerender
-	// it so that it gets served as a static asset in prod
 	export const prerender = true;
 </script>
 
@@ -19,20 +10,19 @@
 </svelte:head>
 
 <div class="content">
-	<h1>About this app</h1>
+	<h1>ABOUT ME</h1>
 
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
+		I got my start writing HTML and CSS in 2002 going through w3schools.com tutorials. My fascination waxed and
+		waned over the years while I dipped my toes into Javascript and PHP. It wasn't until I got my hands on my first
+		Android SDK in 2009 that I started working on my own real projects. However, as life and work got in the way, I
+		wouldn't be able to move into coding professionally for another 10 years.
 	</p>
-
-	<!-- TODO lose the @next! -->
-	<pre>npm init svelte@next</pre>
-
+	<br>
 	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
+		I've been writing production code for 3 years now, but ever since that first dip in 2002, I haven't fully quit
+		writing code. My personal experience ranges from washing dishes and door security, to managing construction
+		projects and servicing oil rigs. My professional exp
 	</p>
 
 	<p>

@@ -1,5 +1,6 @@
 <script context="module" lang="ts">
 	export const prerender = true;
+	import logo from '/logo.svg'
 </script>
 
 <script lang="ts">
@@ -14,19 +15,10 @@
 	<h1>
 		<div class="welcome">
 			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
+				<img src="{logo}" alt="Welcome" />
 			</picture>
 		</div>
-
-		to your new<br />SvelteKit app
 	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
 </section>
 
 <style>
@@ -45,7 +37,7 @@
 	.welcome {
 		position: relative;
 		width: 100%;
-		height: 0;
+		height: 500px;
 		padding: 0 0 calc(100% * 495 / 2048) 0;
 	}
 
