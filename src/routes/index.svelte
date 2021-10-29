@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
 	export const prerender = true;
-	import logo from '/logo.svg'
+	import logo from '/static/logo.svg'
 </script>
 
 <script lang="ts">
